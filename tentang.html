@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="src/index.css">
+  <title>Cafe Yuk! - Tentang</title>
+  <link rel="shortcut icon" href="assets/logo.jpeg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+  <title>Tentang - Cafe Yuk!</title>
+
+</head>
+
+<body class="bg-[var(--bg-white)] min-h-screen overflow-hidden">
+   <!-- ================= PRELOADER ================= -->
+    <div id="pageLoader"
+        class="fixed inset-0 z-[9999] flex flex-col items-center justify-center gap-5 bg-[#1a0a00] transition-opacity duration-500 ease-out">
+        <img src="assets/logo.jpeg" alt="Cafe Yuk" class="w-16 h-16 rounded-full shadow-lg animate-pulse">
+        <div class="w-9 h-9 border-4 border-amber-500/25 border-t-amber-500 rounded-full animate-spin"></div>
+        <p class="text-white/60 text-xs tracking-[0.2em] uppercase">Memuat Halaman</p>
+    </div>
+
+  <!-- ================= MOBILE MENU ================= -->
+  <div id="mobileMenu" class="fixed inset-0 z-[999] backdrop-blur-xl
+hidden opacity-0 transition-opacity duration-300 bg-black/50">
+
+    <!-- Close -->
+    <button id="closeBtn"
+      class="absolute top-6 left-6 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white text-2xl transition">
+      ✕
+    </button>
+
+    <!-- Menu -->
+    <div class="flex flex-col items-center justify-center h-full">
+
+      <a href="index.html" class=" text-4xl text-white/70 mb-8 hover:text-amber-300 transition">
+
+        Beranda
+      </a>
+
+      <a href="index.html#Rekomendasi" class=" text-4xl text-white/70 mb-8 hover:text-amber-300 transition">
+        Rekomendasi
+      </a>
+      <a href="semua.html" class=" text-4xl text-white/70 mb-8 hover:text-amber-300 transition">
+        Semua Cafe
+      </a>
+
+
+      <a href="tentang.html" class=" text-4xl text-white hover:text-amber-300 transition">
+        Tentang
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= DESKTOP NAV ================= -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-black/50">
+
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+
+      <!-- Logo -->
+      <div class="flex gap-3">
+        <img src="assets/logo.jpeg" class=" rounded-full w-[36px] h-[36px]" alt="">
+        <h1 class="text-3xl  text-white">
+          Cafe Yuk!
+        </h1>
+      </div>
+
+      <!-- Desktop -->
+      <ul class="hidden md:flex gap-10 font-sans text-white">
+
+        <li>
+          <a href="index.html" class="hover:text-amber-400 transition tracking-wider font-light">
+            Beranda
+          </a>
+        </li>
+        <li>
+          <a href="index.html#Rekomendasi" class="hover:text-amber-400 transition  tracking-wider font-light">
+            Rekomendasi
+          </a>
+        </li>
+
+        <li>
+          <a href="semua.html" class="hover:text-amber-400 transition  tracking-wider font-light">
+            Semua Cafe
+          </a>
+        </li>
+
+
+        <li>
+          <a href="tentang.html" class="text-amber-400 transition  tracking-wider font-light">
+            Tentang
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- Hamburger -->
+      <button id="menuBtn" class="md:hidden text-white text-4xl">
+
+        ☰
+
+      </button>
+
+    </nav>
+
+  </header>
+
+  <!-- ================= HERO TENTANG ================= -->
+  <div
+    class="HEADER w-full h-[70vh] bg-[url('assets/bg-hero.jpg')] bg-cover bg-center bg-no-repeat gap-3 flex justify-center flex-col items-center text-center">
+    <p class=" text-amber-400 text-3xl">kenalan yuk sama</p>
+    <h1 class="text-6xl text-gray-50 ">Cafe Yuk!</h1>
+    <p class=" text-white text-[18px] max-w-xl px-6">Sistem informasi kafe di Singaraja, dibuat khusus buat mahasiswa
+      dan anak muda yang lagi cari tempat ngopi, nugas, atau sekadar nongkrong.</p>
+  </div>
+
+  <!-- ================= TENTANG KAMI ================= -->
+  <div class="w-full flex flex-col gap-5 p-10 mt-6">
+
+    <div class="w-full gap-3 flex justify-center flex-col items-center text-center">
+      <p class="text-amber-400 text-3xl">Kenapa Cafe Yuk?</p>
+      <h1 class="text-5xl md:text-6xl text-black">Tentang Website Ini</h1>
+    </div>
+
+    <div class="max-w-3xl mx-auto text-center mt-4">
+      <p class="text-gray-500 text-lg leading-relaxed">
+        Cafe Yuk adalah platform sederhana yang merangkum kafe-kafe di Singaraja, lengkap dengan info harga, jam
+        buka, fasilitas, sampai suasana tiap tempat. Tujuannya satu: bantu mahasiswa dan anak muda nemuin kafe yang
+        pas, tanpa harus trial and error keliling kota.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ================= TIM PROJECT ================= -->
+  <div class="w-full flex flex-col gap-5 p-10">
+
+    <div class="title flex flex-col md:flex-row items-center justify-between">
+      <p class="w-fit md:w-1/6"></p>
+      <p class="w-fit md:w-4/6 text-2xl md:text-3xl lg:text-5xl font-semibold text-center">
+        Tim di Balik Cafe Yuk
+      </p>
+      <p class="w-fit md:w-1/6"></p>
+    </div>
+
+    <div class="mother-card grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-6">
+
+      <div class="card rounded-[50px] bg-white shadow-[0_15px_40px_rgba(0,0,0,0.12)] overflow-hidden p-2">
+        <div class="img relative">
+          <img src="assets/bella.png" class="h-[280px] w-full object-contain rounded-[42px] bg-[#1a0a00]">
+        </div>
+
+        <div class="p-4 text-center">
+          <h2 class="text-2xl font-semibold">
+            Bella
+          </h2>
+          <p class="text-amber-500 text-sm mt-1 tracking-wide">
+            Koordinator Kelompok
+          </p>
+        </div>
+      </div>
+
+      <div class="card rounded-[50px] bg-white shadow-[0_15px_40px_rgba(0,0,0,0.12)] overflow-hidden p-2">
+        <div class="img relative">
+          <img src="assets/natasya.png" class="h-[280px] w-full object-contain rounded-[42px] bg-[#1a0a00]">
+        </div>
+
+        <div class="p-4 text-center">
+          <h2 class="text-2xl font-semibold">
+            Natasya
+          </h2>
+          <p class="text-amber-500 text-sm mt-1 tracking-wide">
+            Perencanaan & Desain Sistem
+          </p>
+        </div>
+      </div>
+
+      <div class="card rounded-[50px] bg-white shadow-[0_15px_40px_rgba(0,0,0,0.12)] overflow-hidden p-2">
+        <div class="img relative">
+          <img src="assets/esha.png" class="h-[280px] w-full object-contain rounded-[42px] bg-[#1a0a00]">
+        </div>
+
+        <div class="p-4 text-center">
+          <h2 class="text-2xl font-semibold">
+            Esha
+          </h2>
+          <p class="text-amber-500 text-sm mt-1 tracking-wide">
+            Analisis Sistem
+          </p>
+        </div>
+      </div>
+
+      <div class="card rounded-[50px] bg-white shadow-[0_15px_40px_rgba(0,0,0,0.12)] overflow-hidden p-2">
+        <div class="img relative">
+          <img src="assets/surya.png" class="h-[280px] w-full object-contain rounded-[42px] bg-[#1a0a00]">
+        </div>
+
+        <div class="p-4 text-center">
+          <h2 class="text-2xl font-semibold">
+            Surya
+          </h2>
+          <p class="text-amber-500 text-sm mt-1 tracking-wide">
+            Pengembang Website
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BAGIAN HOOK -->
+  <div class="hook-container p-4 md:p-10">
+    <div
+      class="hook w-full h-[250px] relative overflow-hidden p-2 bg-white shadow-[0_15px_40px_rgba(0,0,0,0.12)] rounded-[54px]">
+
+      <img class="w-full h-full object-cover brightness-40 rounded-[48px]" src="assets/hook2.jpg" alt="Cafe">
+
+      <div class="isi-contain absolute top-0 left-0 w-full h-full">
+        <div class="isi flex w-full h-full justify-between items-center p-10 md:p-10">
+
+          <div class="title flex w-[60%] flex-col gap-1 md:gap-3 h-full justify-center">
+            <h2 class="text-3xl md:text-4xl font-semibold text-white leading-tight">
+              Yuk Mulai Jelajahi
+            </h2>
+            <p class="text-gray-300 text-sm md:text-lg mt-1 ">
+              Semua kafe pilihan di Singaraja udah kami rangkum, tinggal kamu yang nentuin mau ngopi di mana.
+            </p>
+          </div>
+
+          <div class="coa flex h-full justify-end items-end md:items-end w-[35%]">
+            <a href="semua.html">
+              <button
+                class=" px-8 py-3 rounded-full bg-amber-500 text-white font-semibold hover:scale-[1.02] duration-200 text-sm md:text-[16px] whitespace-nowrap">
+                Semua Cafe
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="bg-[#1a0a00] text-white pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Bagian Utama Footer -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+
+        <!-- Kolom 1: Logo & Deskripsi -->
+        <div class="flex flex-col gap-4">
+          <img src="assets/logo.jpeg" class=" rounded-full h-[56px] w-[56px]" alt="">
+          <h2 class="text-2xl font-bold">Cafe Yuk</h2>
+          <p class="text-white/50 max-w-xs">
+            Platform terbaik untuk menemukan kafe impianmu dengan suasana yang pas untuk segala kebutuhan.
+          </p>
+          <!-- Placeholder Sosial Media -->
+          <div class="flex gap-4 mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <g fill="none">
+                <path
+                  d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                <path fill="currentColor"
+                  d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm-4 5a4 4 0 1 0 0 8a4 4 0 0 0 0-8m0 2a2 2 0 1 1 0 4a2 2 0 0 1 0-4m4.5-3.5a1 1 0 1 0 0 2a1 1 0 0 0 0-2" />
+              </g>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="currentColor"
+                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="currentColor"
+                d="M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48" />
+            </svg>
+
+
+
+          
+          </div>
+        </div>
+
+        <!-- Kolom 2: Navigasi -->
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Menu</h3>
+          <ul class="flex flex-col gap-3 text-white/50">
+            <li><a href="index.html" class="hover:text-amber-500 transition">Beranda</a></li>
+            <li><a href="index.html#Rekomendasi" class="hover:text-amber-500 transition">Rekomendasi</a></li>
+            <li><a href="semua.html" class="hover:text-amber-500 transition">Semua Kafe</a></li>
+            <li><a href="tentang.html" class="hover:text-amber-500 transition">Tentang</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: Kontak / Informasi Tambahan -->
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Kontak</h3>
+          <p class="text-white/50">support@cafeyuk.com</p>
+          <p class="text-white/50 mt-2">Bali, Indonesia</p>
+        </div>
+
+      </div>
+
+      <!-- Garis Pembatas -->
+      <div class="border-t border-white/50 my-8"></div>
+
+      <!-- Copyright -->
+      <div class="text-sm text-white/50 text-center md:text-left">
+        © 2026 Cafe Yuk all right served.
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <script>
+    const menu = document.getElementById("mobileMenu");
+
+    function openMenu() {
+      menu.classList.remove("hidden");
+
+      requestAnimationFrame(() => {
+        menu.classList.remove("opacity-0");
+        menu.classList.add("opacity-100");
+      });
+    }
+
+    function closeMenu() {
+      menu.classList.remove("opacity-100");
+      menu.classList.add("opacity-0");
+
+      setTimeout(() => {
+        menu.classList.add("hidden");
+      }, 300);
+    }
+
+    menuBtn.addEventListener("click", openMenu);
+    closeBtn.addEventListener("click", closeMenu);
+
+    menu.addEventListener("click", (e) => {
+      if (e.target === menu) closeMenu();
+    });
+
+
+    let lastScroll = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+
+      const currentScroll = window.scrollY;
+
+      if (currentScroll < 80) {
+        navbar.classList.remove("-translate-y-full");
+        lastScroll = currentScroll;
+        return;
+      }
+
+      if (currentScroll > lastScroll) {
+        navbar.classList.add("-translate-y-full");
+      } else {
+        navbar.classList.remove("-translate-y-full");
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+   <!-- PRELOADER: sembunyikan setelah SEMUA resource (gambar, iframe, dll) selesai dimuat -->
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("pageLoader");
+            if (!loader) return;
+            loader.style.opacity = "0";
+            document.body.classList.remove("overflow-hidden");
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+        });
+
+        // Fallback: kalau karena suatu hal event 'load' gagal, paksa sembunyikan setelah 8 detik
+        setTimeout(() => {
+            const loader = document.getElementById("pageLoader");
+            if (loader && loader.style.display !== "none") {
+                loader.style.opacity = "0";
+                document.body.classList.remove("overflow-hidden");
+                setTimeout(() => (loader.style.display = "none"), 500);
+            }
+        }, 8000);
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+
+</body>
+
+</html>
