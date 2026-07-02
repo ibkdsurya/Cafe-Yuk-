@@ -1,0 +1,67 @@
+ @import "tailwindcss";
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Quicksand:wght@300..700&display=swap');
+
+
+*{
+    scroll-behavior: smooth;
+}
+
+ :root {
+     --bg-main: #1a0a00;
+     --bg-white: #fdf9f5;
+     --font-heading: "Libre Caslon Display", serif;
+     --font-body: "Quicksand", sans-serif;
+
+ }
+
+ body, p, a {
+     font-family: var(--font-body);
+ }
+ .mother-card {
+    .card{
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06)
+    }
+ }
+button{
+    cursor: pointer;
+}
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: var(--font-heading);
+ }
+/* 
+category */
+
+.category-item{
+
+    padding:10px 18px;
+
+    border:1px solid #ddd;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    user-select:none;
+
+}
+
+.category-item.active{
+
+    background:#fe9a00;
+
+    color:white;
+
+    border-color:#fe9a00;
+
+}
+
+
+ 
